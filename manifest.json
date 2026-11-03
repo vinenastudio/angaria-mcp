@@ -1,0 +1,171 @@
+{
+  "$schema": "https://raw.githubusercontent.com/modelcontextprotocol/mcpb/main/schemas/mcpb-manifest-v0.3.schema.json",
+  "manifest_version": "0.3",
+  "name": "angaria",
+  "display_name": "Angaria",
+  "version": "0.1.0",
+  "description": "Create, sign and download Turkish e-Arşiv invoices through the Angaria Mac app",
+  "long_description": "Angaria is a paid Mac app for Turkish e-Arşiv invoicing on GİB's e-Arşiv Portal. While the app is open, it serves an MCP server on this Mac. This bundle holds angaria-mcp, a small stdio program that forwards each request to that server. It needs the Angaria app installed and open, with a license or the 7-day free trial. Signing, deleting and changing company details work only when the user turns on \"Ajanlar onaylayabilir ve silebilir\" in the app, and signing always needs the SMS code GİB sends to the user's phone.",
+  "author": {
+    "name": "Vinena Yazılım ve Tasarım Ltd. Şti.",
+    "email": "hi@angaria.app",
+    "url": "https://angaria.app/en"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vinenastudio/angaria-mcp"
+  },
+  "homepage": "https://angaria.app/en",
+  "documentation": "https://github.com/vinenastudio/angaria-mcp#readme",
+  "support": "https://github.com/vinenastudio/angaria-mcp/issues",
+  "server": {
+    "type": "binary",
+    "entry_point": "server/angaria-mcp",
+    "mcp_config": {
+      "command": "${__dirname}/server/angaria-mcp",
+      "args": [],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "list_invoices",
+      "description": "Lists invoices between two dates (31 days at most), filtered by status and recipient."
+    },
+    {
+      "name": "get_invoice",
+      "description": "Gets an invoice's recipient, lines and totals, or GİB's own view of the invoice."
+    },
+    {
+      "name": "create_invoice",
+      "description": "Creates an unsigned draft invoice with the same rules as the app's New invoice form."
+    },
+    {
+      "name": "duplicate_invoice",
+      "description": "Creates a new draft from an existing invoice, dated today."
+    },
+    {
+      "name": "download_invoice",
+      "description": "Saves the Angaria PDF, the e-Arşiv PDF or GİB's ZIP file to your Downloads folder."
+    },
+    {
+      "name": "request_signing_sms",
+      "description": "Asks GİB to send an SMS code to your phone so drafts can be signed."
+    },
+    {
+      "name": "sign_invoices",
+      "description": "Signs drafts with the SMS code you give the agent. A signed invoice is final."
+    },
+    {
+      "name": "delete_draft",
+      "description": "Deletes an unsigned draft from GİB. Never touches signed invoices."
+    },
+    {
+      "name": "list_customers",
+      "description": "Lists saved customers and their invoice defaults."
+    },
+    {
+      "name": "get_customer",
+      "description": "Gets a customer's details and invoice defaults."
+    },
+    {
+      "name": "create_customer",
+      "description": "Saves a new customer."
+    },
+    {
+      "name": "update_customer",
+      "description": "Changes a customer's details or invoice defaults."
+    },
+    {
+      "name": "delete_customer",
+      "description": "Deletes a saved customer. Invoices you already issued do not change."
+    },
+    {
+      "name": "list_services",
+      "description": "Lists saved services with their prices, currencies and VAT rates."
+    },
+    {
+      "name": "get_service",
+      "description": "Gets a service's price, unit and VAT rate."
+    },
+    {
+      "name": "create_service",
+      "description": "Saves a new service."
+    },
+    {
+      "name": "update_service",
+      "description": "Changes a service's name, price or VAT rate."
+    },
+    {
+      "name": "delete_service",
+      "description": "Deletes a saved service. Invoices you already issued do not change."
+    },
+    {
+      "name": "list_companies",
+      "description": "Lists the companies in Angaria and which one is selected."
+    },
+    {
+      "name": "get_company_details",
+      "description": "Gets the company and bank details printed on the PDF, and the PDF design."
+    },
+    {
+      "name": "update_company_details",
+      "description": "Changes the company and bank details printed on the PDF, including the IBAN."
+    },
+    {
+      "name": "rename_company",
+      "description": "Changes the company name shown in Angaria's company list."
+    },
+    {
+      "name": "set_company_logo",
+      "description": "Replaces the PDF logo with an image file on your Mac, or removes it."
+    },
+    {
+      "name": "get_exchange_rate",
+      "description": "Gets the Turkish central bank (TCMB) buying rate for an invoice date."
+    },
+    {
+      "name": "check_gib_connection",
+      "description": "Logs in to GİB with the saved user code, then logs out. The password never goes to the agent."
+    },
+    {
+      "name": "lookup_taxpayer",
+      "description": "Gets the registered name and tax office for a Turkish tax ID (VKN or TCKN) from GİB."
+    },
+    {
+      "name": "close_gib_session",
+      "description": "Closes a session that is still open on the e-Arşiv Portal."
+    },
+    {
+      "name": "scan_gib_import",
+      "description": "Finds customers and services to save from your signed invoices."
+    },
+    {
+      "name": "apply_gib_import",
+      "description": "Saves the customers and services you chose from the scan. Never changes saved ones."
+    },
+    {
+      "name": "get_app_settings",
+      "description": "Gets the theme, the color palette and Angaria's version."
+    },
+    {
+      "name": "update_app_settings",
+      "description": "Changes the theme or the color palette."
+    }
+  ],
+  "keywords": [
+    "invoice",
+    "e-arsiv",
+    "gib",
+    "turkey",
+    "tax",
+    "accounting",
+    "macos"
+  ],
+  "license": "MIT",
+  "compatibility": {
+    "platforms": [
+      "darwin"
+    ]
+  }
+}

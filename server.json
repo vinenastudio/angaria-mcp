@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "app.angaria/angaria",
+  "title": "Angaria",
+  "description": "Create, sign and download Turkish e-Arşiv invoices through the Angaria Mac app",
+  "repository": {
+    "url": "https://github.com/vinenastudio/angaria-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://angaria.app/en",
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/vinenastudio/angaria-mcp/releases/download/v0.1.0/angaria-mcp.mcpb",
+      "version": "0.1.0",
+      "fileSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

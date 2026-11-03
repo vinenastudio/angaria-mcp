@@ -1,0 +1,21 @@
+[package]
+name = "angaria-mcp"
+version = "0.1.0"
+description = "stdio bridge from MCP clients to the MCP server built into the Angaria Mac app"
+authors = ["Mert Düzgün"]
+license = "MIT"
+repository = "https://github.com/vinenastudio/angaria-mcp"
+homepage = "https://angaria.app/en"
+readme = "README.md"
+keywords = ["mcp", "e-arsiv", "invoice", "gib", "macos"]
+categories = ["command-line-utilities"]
+publish = false
+edition = "2021"
+rust-version = "1.77.2"
+
+[dependencies]
+base64 = "0.22"
+serde_json = "1.0"
+
+[profile.release]
+strip = true
