@@ -17,7 +17,7 @@ Web sitesi: [angaria.app](https://angaria.app)
 
 ## Kurulum
 
-En hızlı yol: Angaria’yı aç, MCP sayfasına git ve Kurulum’u kullan. Angaria’yı tek tıkla 22 istemciye ekler, aralarında Claude Code, Claude Desktop, Codex, Cursor, Gemini CLI, VS Code, Windsurf ve Zed var.
+En hızlı yol: Angaria’yı aç, MCP sayfasına git ve Kurulum’u kullan. Kurulum bölümü 22 istemciyi listeler (aralarında Claude Code, Claude Desktop, Codex, Cursor, Gemini CLI, VS Code, Windsurf ve Zed var) ve Angaria’yı her birine tek tıkla (Ekle) ekler.
 
 Elle eklerken her istemci aynı adresi alır: `http://127.0.0.1:41234/mcp` (Streamable HTTP, anahtar yok).
 
@@ -121,7 +121,7 @@ Asistan Apple’ı kayıtlı müşterilerinde bulur (yoksa ekler), sonra fatura 
 - Onay her zaman GİB’in telefonuna gönderdiği SMS şifresini ister. Asistan, senin verdiğin şifre olmadan onaylayamaz.
 - Onaylamak, silmek ve firma bilgilerini (her PDF’teki IBAN) değiştirmek yalnızca "Ajanlar onaylayabilir ve silebilir" açıkken çalışır. Varsayılan olarak kapalı.
 - GİB şifren macOS Anahtar Zinciri’nde kalır. Hiçbir araç onu okumaz ya da yazmaz.
-- Angaria sunucusu yok. Faturaların, müşterilerin ve hizmetlerin Mac’inde kalır. Uygulama yalnızca GİB, TCMB (kurlar için), Polar (lisans için) ve kendi güncelleme sunucusuyla konuşur.
+- Angaria’nın hesabı ya da bulutu yok. Faturaların, müşterilerin ve hizmetlerin Mac’inde kalır. Uygulama yalnızca GİB, TCMB (döviz kurları için), Polar (lisans için) ve Angaria’nın güncelleme sunucusuyla konuşur.
 - Angaria’nın MCP sayfası her araç çağrısını bir etkinlik kaydında gösterir, SMS şifreleri ve parolalar gizlenir.
 
 ## Kaynaktan derleme

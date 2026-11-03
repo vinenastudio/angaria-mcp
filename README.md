@@ -19,7 +19,7 @@ The Angaria app is in Turkish. The tools answer in Turkish, and your assistant c
 
 ## Setup
 
-The fastest way: open Angaria, go to the MCP page, and use Kurulum. It adds Angaria to 22 clients with one click, among them Claude Code, Claude Desktop, Codex, Cursor, Gemini CLI, VS Code, Windsurf and Zed.
+The fastest way: open Angaria, go to the MCP page, and use Kurulum. Its Kurulum section lists 22 clients, among them Claude Code, Claude Desktop, Codex, Cursor, Gemini CLI, VS Code, Windsurf and Zed, and adds Angaria to each one with one click (Ekle).
 
 By hand, every client gets the same address: `http://127.0.0.1:41234/mcp` (Streamable HTTP, no key).
 
@@ -123,7 +123,7 @@ The assistant finds Apple in your saved customers (or adds it), then creates a d
 - Signing always needs the SMS code GİB sends to your phone. The assistant cannot sign without the code you give it.
 - Signing, deleting and changing company details (the IBAN on every PDF) work only when "Ajanlar onaylayabilir ve silebilir" is on. It is off by default.
 - Your GİB password stays in the macOS Keychain. No tool reads or writes it.
-- There is no Angaria server. Your invoices, customers and services stay on your Mac. The app talks only to GİB, TCMB (for exchange rates), Polar (for the license) and its update server.
+- Angaria has no account and no cloud storage. Your invoices, customers and services stay on your Mac. The app talks only to GİB, TCMB (for exchange rates), Polar (for the license) and Angaria's update server.
 - Angaria's MCP page lists every tool call in an activity log, with SMS codes and passwords masked.
 
 ## Build from source
