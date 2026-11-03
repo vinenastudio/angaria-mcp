@@ -14,7 +14,7 @@
       "registryType": "mcpb",
       "identifier": "https://github.com/vinenastudio/angaria-mcp/releases/download/v0.1.0/angaria-mcp.mcpb",
       "version": "0.1.0",
-      "fileSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "fileSha256": "e277c101e60b0386b256f8494d78ffb9705aa5cfc0359d565a1826dd09e518f3",
       "transport": {
         "type": "stdio"
       }
