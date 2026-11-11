@@ -87,12 +87,12 @@ Araçlar, sunucunun listelediği sırayla. "Evet" yazan araçlar yalnızca Angar
 | `list_customers` | Kayıtlı müşteriler ve fatura varsayılanları. |  |
 | `get_customer` | Bir müşterinin bilgileri ve fatura varsayılanları. |  |
 | `create_customer` | Yeni bir müşteri kaydeder. |  |
-| `update_customer` | Bir müşterinin bilgilerini ya da varsayılanlarını değiştirir. |  |
+| `update_customer` | Bir müşterinin bilgilerini ya da varsayılanlarını değiştirir. | Evet |
 | `delete_customer` | Bir müşteriyi kayıtlardan siler. Kestiğin faturalar etkilenmez. | Evet |
 | `list_services` | Kayıtlı hizmetler, fiyatları, para birimleri ve KDV oranları. |  |
 | `get_service` | Bir hizmetin fiyatı, birimi ve KDV oranı. |  |
 | `create_service` | Yeni bir hizmet kaydeder. |  |
-| `update_service` | Bir hizmetin adını, fiyatını ya da KDV oranını değiştirir. |  |
+| `update_service` | Bir hizmetin adını, fiyatını ya da KDV oranını değiştirir. | Evet |
 | `delete_service` | Bir hizmeti kayıtlardan siler. Kestiğin faturalar etkilenmez. | Evet |
 | `list_companies` | Angaria’daki şirketler ve seçili olan. Araçlar seçili şirketle çalışır. |  |
 | `get_company_details` | PDF’e basılan firma ve banka bilgileri, PDF tasarımı. |  |

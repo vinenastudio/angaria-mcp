@@ -89,12 +89,12 @@ The tools in the order the server lists them. A tool marked "Yes" works only whe
 | `list_customers` | Lists saved customers and their invoice defaults. |  |
 | `get_customer` | Gets a customer's details and invoice defaults. |  |
 | `create_customer` | Saves a new customer. |  |
-| `update_customer` | Changes a customer's details or invoice defaults. |  |
+| `update_customer` | Changes a customer's details or invoice defaults. | Yes |
 | `delete_customer` | Deletes a saved customer. Invoices you already issued do not change. | Yes |
 | `list_services` | Lists saved services with their prices, currencies and VAT rates. |  |
 | `get_service` | Gets a service's price, unit and VAT rate. |  |
 | `create_service` | Saves a new service. |  |
-| `update_service` | Changes a service's name, price or VAT rate. |  |
+| `update_service` | Changes a service's name, price or VAT rate. | Yes |
 | `delete_service` | Deletes a saved service. Invoices you already issued do not change. | Yes |
 | `list_companies` | Lists the companies in Angaria and which one is selected. |  |
 | `get_company_details` | Gets the company and bank details printed on the PDF, and the PDF design. |  |

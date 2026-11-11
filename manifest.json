@@ -5,7 +5,7 @@
   "display_name": "Angaria",
   "version": "0.1.0",
   "description": "Create, sign and download Turkish e-Arşiv invoices through the Angaria Mac app",
-  "long_description": "Angaria is a paid Mac app for Turkish e-Arşiv invoicing on GİB's e-Arşiv Portal. While the app is open, it serves an MCP server on this Mac. This bundle holds angaria-mcp, a small stdio program that forwards each request to that server. It needs the Angaria app installed and open, with a license or the 7-day free trial. Signing, deleting and changing company details work only when the user turns on \"Ajanlar onaylayabilir ve silebilir\" in the app, and signing always needs the SMS code GİB sends to the user's phone.",
+  "long_description": "Angaria is a paid Mac app for Turkish e-Arşiv invoicing on GİB's e-Arşiv Portal. While the app is open, it serves an MCP server on this Mac. This bundle holds angaria-mcp, a small stdio program that forwards each request to that server. It needs the Angaria app installed and open, with a license or the 7-day free trial. Signing, deleting, changing saved customers and services, and changing company details work only when the user turns on \"Ajanlar onaylayabilir ve silebilir\" in the app, and signing always needs the SMS code GİB sends to the user's phone.",
   "author": {
     "name": "Vinena Yazılım ve Tasarım Ltd. Şti.",
     "email": "hi@angaria.app",
